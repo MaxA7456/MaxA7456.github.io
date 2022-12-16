@@ -15,7 +15,7 @@
             Max Appel
         </title>
         <!--favicon-->
-        <link rel="icon" type="image/x-icon" href="https://iili.io/HobHhjn.png">
+        <link rel="icon" type="image/x-icon" href="https://iili.io/HobBNnI.png">
         <!--Fonts (Open Sans)-->
          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
 
@@ -26,29 +26,70 @@
             background-color: rgb(29,29,29);
         }
 
+        .topper{
+            font-size:1px;
+        }
+
+        .uslist{
+             list-style-type: none;
+             margin:0;
+             padding:2px;
+             overflow:hidden;
+             outline-style: solid;
+             outline-width: 1px;
+             outline-color: whitesmoke;
+             font-family:'Open Sans';
+             border-radius: 1px;
+                   
+        }
+
+        .list{
+             padding-bottom:8px;
+             margin:0;
+             float:center;      
+        }
+
+        .nvbr:link,a:visited{
+         display: block;
+         color:coral;
+         font-size:14px;
+         background-color:rgb(29,29,29);
+         text-decoration:none;
+        }
+
+        .nvbr:hover,a:active{
+         color:whitesmoke; 
+         text-decoration: none; 
+        }
+
         .image-container{
-            background-color:coral;
+            background-color:whitesmoke;
             display: inline-flex;        
-            padding-top: 2px;
-            padding-bottom: 2px;
-            padding-left: 2px;
-            padding-right: 2px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
             max-height: 100%;
-            max-width: 100%;         
+            max-width: 100%;
+            border-radius: 4px;
+            outline-style: solid;
+            outline-width: 2px;
+            outline-color: coral;        
         }
         
         .header{
             color: coral;
-            align-items: center;
+            text-decoration: none;
         }
 
         .text{
             color: whitesmoke;
             font-size: clamp(15px,3vw,22px); 
-            justify-content: left;
+            justify-content: center;
         }
         
         .img1{
+
             width: 100%;
             height: 100%;
             min-width: 50%;
@@ -68,20 +109,37 @@
     </style> 
     <!--clamp(minimum,skalierung,maximum)-->
     <body>
+        <!--top-element-->
+        <h1 id="top" class="topper"><br></h1>
+        <!--Navbar -->
+        <div class="allgcontainer">
         <!--Begrüßung-->
         <h1 class="header">
-            <center>
-                Servus!
-            </center>
-        </h1>
 
+            Servus!
+        
+        </h1>
+        <ul class="uslist">
+            <center>
+             <li class="list">
+                 <a class="nvbr" href="#Lebenslauf">Lebenslauf</a>
+             </li>
+             <li class="list">
+                 <a class="nvbr" href="#Über mich">Über mich</a>
+             </li>
+             <li class="list">
+                 <a class="nvbr" href="#Kontakt">Kontakt</a>
+             </li>
+            </center>
+        </ul>
+        </div>
         <p class="text">
             Mein Name ist Maximilian Appel, ich bin Student der Verfahrenstechnik und Nachhaltigkeit und wohne in Kempten im Allgäu. Herzlich willkommen auf meiner Webseite!
         </p>
     <div class="allgcontainer">
 
     <div class="spezcontainer">
-        <h2 class="header">
+        <h2 id="Lebenslauf" class="header">
             Mein Lebenslauf
         </h2>
 
@@ -96,7 +154,7 @@
      </div>
 
         <!--Über mich-->
-        <h2 class="header">
+        <h2 id="Über mich" class="header">
             Über mich
         </h2>
         <ul class="text">
@@ -106,16 +164,21 @@
             - Französisch (gut)<br>
             - Spanisch (gut)<br>
             - Schwedisch (ein wenig, da gerade erst angefangen)<br>
-
+            <br>
+            <li>Ich habe Erfahrungen mit folgenden Programmiersprachen:</li>
+            - C++ (Prüfung bestanden)<br>
+            - HTML (Diese Webseite habe ich selbst gemacht)<br>
+            - Matlab (besuche zur Zeit einen Kurs)<br>
             <br>
             <li>
-                Meine Freizeit verbringe ich gern draußen beim Bergwandern und Fischen, aber auch gerne daheim als Hobbygärtner.
+                Meine Freizeit verbringe ich gern draußen beim Bergwandern und Fischen,
+                 aber auch gerne daheim als Hobbygärtner und Amateurkoch.
             </li>
             
         </ul>
 
         <!--Kontakt-->
-        <h2 class="header">
+        <h2 id="Kontakt" class="header">
             Kontakt
         </h2>
 
@@ -132,6 +195,8 @@
             Email Hochschule Kempten:<br>
              <a href="mailto:maximilian.appel@stud.hs-kempten.de">maximilian.appel@stud.hs-kempten.de</a>
         </p>
-
+        <a href="#top" class="nvbr">
+             <b>▲ nach oben ▲</b>
+        </a>
     </body>
 </html>
